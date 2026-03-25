@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+/* Barra amarela */
+.topo{
+background: yellow;
+text-align: center;
+padding: 10px;
+font-weight: bold;
+}
+
+/* Cabeçalho */
+header{
+background: #2ab7a9;
+text-align: center;
+color: white;
+padding: 60px;
+}
+
+/* Menu */
+nav{
+display:flex;
+background:#333;
+}
+
+nav a{
+color:white;
+padding:14px 20px;
+text-decoration:none;
+}
+
+nav a:hover{
+background:#ddd;
+color:black;
+}
+
+/* Layout */
+.row{
+display:flex;
+}
+
+/* Coluna esquerda */
+.side{
+flex:30%;
+background:#f1f1f1;
+padding:20px;
+}
+
+/* Coluna direita */
+.main{
+flex:70%;
+background:white;
+padding:20px;
+}
+
+/* Imagens falsas */
+.fakeimg{
+width: 150px;
+padding:0;
+margin: 0;
+}
+
+/* Imagem grande */
+.grande{
+
+height:200px;
+}
+
+footer{
+background:#ddd;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
